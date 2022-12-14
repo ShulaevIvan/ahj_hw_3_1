@@ -1,0 +1,50 @@
+body {
+    color: #333;
+    justify-content: center;
+    display: flex;
+}
+
+.game_wrap{
+    cursor: url('../components/goblin/img/hammer3.png'), auto;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 7%;
+}
+  
+.status {
+    margin-bottom: 20px;
+}
+
+.hole {
+    height: 150px;
+    flex: 1 0 21%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    background: darkseagreen;
+    border-radius: 50%;
+}
+
+.goblin {
+    background-image: url('../components/goblin/img/goblin.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.score {
+    font-size: 30px;
+    color: #333;
+}
+.totalScore {
+    color: #ff2400;
+}
+
+@media (max-width: 600px) {
+    .game_wrap {
+        padding: 0;
+    }
+    .hole {
+        height: 100px;
+    }
+}
