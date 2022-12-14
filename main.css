@@ -1,0 +1,90 @@
+body {
+    color: #333;
+    justify-content: center;
+    display: flex;
+}
+
+.game_wrap{
+    cursor: url(d74591c56a621d7a84cd.png), auto;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 7%;
+}
+  
+.status {
+    margin-bottom: 20px;
+}
+
+.hole {
+    height: 150px;
+    flex: 1 0 21%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    background: darkseagreen;
+    border-radius: 50%;
+}
+
+.goblin {
+    background-image: url(2dbd01ce16c0fa83cb67.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.score {
+    font-size: 30px;
+    color: #333;
+}
+.totalScore {
+    color: #ff2400;
+}
+
+@media (max-width: 600px) {
+    .game_wrap {
+        padding: 0;
+    }
+    .hole {
+        height: 100px;
+    }
+}
+.popup {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 100;
+  }
+  
+  .popup::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+  }
+  
+.popup__window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 300px;
+    max-width: 600px;
+    height: 300px;
+    text-align: center;
+    border-radius: 14px;
+    padding: 0 18px;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2);
+  }
+  
+.popup_hidden {
+    display: none;
+}
